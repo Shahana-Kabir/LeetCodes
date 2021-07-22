@@ -1,5 +1,7 @@
 var isPalindrome = function(x){
-    let newArray = Array.from(x); 
+    let newString = x.toLowerCase();
+    let newArray = Array.from(newString); 
+    
     var len = newArray.length;
     var revArray = newArray.reverse();
     for(i = 0;i<(len-1);i++){
@@ -14,5 +16,5 @@ var isPalindrome = function(x){
   
 }
 
-var result = isPalindrome('shanu');
+var result = isPalindrome('Shanu');
 console.log(result);
